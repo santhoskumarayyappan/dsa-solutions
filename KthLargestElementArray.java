@@ -3,7 +3,7 @@
 
 
 
-class Solution {
+class KthLargestElementArray {
     
     public void swap(int[] nums, int i, int j) {
         int temp = nums[i];
