@@ -9,7 +9,7 @@ public class EugeneAndAnArray {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        Map<Long, Integer> sumMap = new HashMap<>();
+        Map<Long, Integer> sumMap = new HashMap<>(); // gives position to the right (+ 1) of which Good SubArray can begin
         sumMap.put(0L, 0);
         long ans = 0, sum = 0;
         int leftPos = -1;
