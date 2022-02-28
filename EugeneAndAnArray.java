@@ -5,6 +5,15 @@
 
 import java.util.*;
 
+// observation
+// Say, prefixSum[i] = prefixSum[j] , i > j and j is the first index to satisfy this
+// => a[0] + a[1] + ... + a[i] = a[0] + a[1] + ... a[i] + ... + a[j]
+// => a[i + 1] + a[i + 2] + ... + a[j] = 0
+
+// => a[i + 2] + a[i + 3] + ... + a[j] != 0
+// since a[i + 1] != 0 otherwise prefix[j] would nt be the first index to satisfy our assumption, (if a[i + 1] = 0 , them prefixSum[i + 1] and prefixSum[i] would have been the same)
+// so a[i + 2 ... j] is happy subArray
+
 public class EugeneAndAnArray {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
