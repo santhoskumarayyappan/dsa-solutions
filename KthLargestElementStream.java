@@ -3,7 +3,7 @@
 
 
 
-class KthLargest {
+class KthLargestElementStream {
 
     public PriorityQueue<Integer> minHeap;
     public int k;
