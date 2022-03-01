@@ -7,7 +7,7 @@
 // idea is to use Quick Select which returns K th smallest element, a[i] and also puts a[i] in its sorted position i.e a[0 ... i] <= a[i] and a[i] <= a[i + 1 ... n - 1]
 // so we can return a[0 ... i]
 
-class KClosestPointsToOriginUsingQuickSelect {
+class KClosestPointsToOrigin {
     public int getDistance(int[] a) {
         return a[0] * a[0] + a[1] * a[1];
     }
