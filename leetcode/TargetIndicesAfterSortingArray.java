@@ -2,6 +2,7 @@
 //https://leetcode.com/problems/find-target-indices-after-sorting-array/
 
 
+
 class Solution {
     // given target find first i s.t a[i] >= target
     public int search(int[] a, int target) {
