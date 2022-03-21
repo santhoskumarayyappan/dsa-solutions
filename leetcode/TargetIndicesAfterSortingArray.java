@@ -21,10 +21,6 @@ class Solution {
         Arrays.sort(a);
         int left = search(a, target);
         int right = search(a, target + 1);
-        if (left < a.length && a[left] == target) {
-            return IntStream.range(left, right).boxed().collect(Collectors.toList());
-        } else {
-            return new ArrayList<>();
-        }
+        return IntStream.range(left, right).boxed().collect(Collectors.toList());
     }
 }
