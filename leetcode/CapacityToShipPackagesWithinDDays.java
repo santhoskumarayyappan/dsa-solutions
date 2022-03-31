@@ -1,3 +1,8 @@
+//01-04-2022
+//https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+
+
+
 class Solution {
     public int getNoOfDaysToLoadforCapacity(int[] weights, int capacity) {
         int days = 1, sum = 0;
