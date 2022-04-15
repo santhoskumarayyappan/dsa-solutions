@@ -2,7 +2,6 @@
 //https://www.spoj.com/problems/AGGRCOW/
 
 
-
 import java.util.*;
 
 public class Main {
