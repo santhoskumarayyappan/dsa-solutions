@@ -14,13 +14,11 @@ class Solution {
             return false;
         }
         
-        Arrays.sort(nums);
         int target = sum / 2;
         
         boolean[] dp = new boolean[target + 1];
         
         dp[0] = true;
-        
         
         for (int i = 1; i <= nums.length; i++) {
             for (int j = target; j >= nums[i - 1]; j--) {
