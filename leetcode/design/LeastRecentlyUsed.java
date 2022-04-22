@@ -22,7 +22,8 @@ class LRUCache extends LinkedHashMap<Integer, Integer> {
 }
 
 
-// Without LinkedHashMapclass LRUCache {
+// Without LinkedHashMap
+class LRUCache {
     
     private Map<Integer, Node> keyToNodeMap;
     private LinkedList<Node> list;
