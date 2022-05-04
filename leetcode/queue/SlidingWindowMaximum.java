@@ -2,6 +2,7 @@
 //https://leetcode.com/problems/sliding-window-maximum/
 
 
+// q will contain potential candidates in the current window in monotonic decreasing manner
 class Solution {
     class Node {
         int index;
