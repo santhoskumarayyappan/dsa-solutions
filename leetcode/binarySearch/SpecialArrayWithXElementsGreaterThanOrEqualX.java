@@ -3,7 +3,6 @@
 
 
 
-
 class Solution {
     
     public int getNumberOfElementsGreaterThanOrEqualX(int[] nums, int x) {
