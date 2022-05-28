@@ -20,12 +20,10 @@ class Solution {
                 q.addLast(new Node(ch, count));
             } else {
                 Node last = q.peekLast();
-                if (ch == last.ch) {
-                    last.count++;
-                    if (last.count == k) {
-                        q.pollLast();
-                    }
-                }                 
+                last.count++;
+                if (last.count == k) {
+                    q.pollLast();
+                }                
             }
         }
         StringBuilder st = new StringBuilder();
