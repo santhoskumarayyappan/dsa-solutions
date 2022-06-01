@@ -1,8 +1,10 @@
-//01-05-2022
-//https://leetcode.com/problems/sliding-window-maximum/
+01-05-2022
+[Question](https://leetcode.com/problems/sliding-window-maximum/)
 
 
-// q will contain potential candidates in the current window in monotonic decreasing manner
+At any point MaxSlidingWindow will have atmost k nodes
+with 'index' and 'val' monotonically decreasing from head to tail
+```
 class Solution {
     class Node {
         int index;
@@ -37,3 +39,4 @@ class Solution {
         return ans.stream().mapToInt(e -> e).toArray();
     }
 }
+```
