@@ -1,7 +1,6 @@
-//02-04-2022
-//https://www.spoj.com/problems/AGGRCOW/
-
-
+02-04-2022
+[Question](https://www.spoj.com/problems/AGGRCOW/)
+```
 import java.util.*;
 
 public class Main {
@@ -54,3 +53,4 @@ public class Main {
         return c > 0;
     }
 }
+```
