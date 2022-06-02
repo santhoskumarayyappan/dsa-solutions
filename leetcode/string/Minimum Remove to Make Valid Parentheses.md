@@ -3,7 +3,7 @@
 ```
 class Solution {
     public String solve1(String s) {
-       int[] right = new int[s.length()];
+       int[] right = new int[s.length()]; //right[i] = number of closingBrackets in [i+1, ...]
        right[s.length() - 1] = 0;
        for (int i = s.length() - 2; i >= 0; i--) {
            right[i] = right[i + 1];
@@ -12,11 +12,11 @@ class Solution {
            }
        }
         
-       int opening = 0;
+       int opening = 0; // number of unBalanced openingBrackets seen so far
        StringBuilder ans = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
-                if (right[i] >= opening + 1) {
+                if (opening + 1 <= right[i]) { 
                     opening++;
                     ans.append(s.charAt(i));
                 }
@@ -36,6 +36,7 @@ class Solution {
         int curBrackets = 0;
         int n = s.length();
         StringBuilder sb = new StringBuilder(s);
+        // Replace all unbalanced ')' with '#
         for (int i = 0; i < n; i++) {
             if (sb.charAt(i) == '(') {
                 curBrackets++;
@@ -50,6 +51,7 @@ class Solution {
         
         sb = sb.reverse();
         curBrackets = 0;
+        // Replace all unbalanced ')' with '#
         for (int i = 0; i < n; i++) {
             if (sb.charAt(i) == ')') {
                 curBrackets++;
@@ -63,6 +65,7 @@ class Solution {
         }
         sb = sb.reverse();
         StringBuilder ans = new StringBuilder();
+        // Remove all '#'
         for (int i = 0; i < sb.length(); i++) {
             if (sb.charAt(i) != '#') {
                 ans.append(sb.charAt(i));
