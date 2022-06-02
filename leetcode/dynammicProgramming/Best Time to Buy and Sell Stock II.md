@@ -1,7 +1,6 @@
-//30-04-2022
-//https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
-
-
+30-04-2022
+[Question](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)
+```
 class Solution {
     public int maxProfit(int[] prices) {
         int ans = 0;
@@ -16,3 +15,4 @@ class Solution {
         return ans;
     }
 }
+```
