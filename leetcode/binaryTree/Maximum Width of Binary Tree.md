@@ -1,5 +1,7 @@
 07-06-2022
 [Question](https://leetcode.com/problems/maximum-width-of-binary-tree/)
+<br>
+` * Idea is to insert position of nodes with node in Q and calculate Width`
 ```
 class Solution {
     class DataNode {
