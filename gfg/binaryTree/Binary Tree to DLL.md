@@ -1,7 +1,7 @@
 
 07-06-2022
 [Question](https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1/)
-```
+```java
 class Solution
 {
     Node prev;
