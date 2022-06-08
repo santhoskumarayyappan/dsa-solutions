@@ -12,6 +12,7 @@ public class Main {
             this.size = size;
         }
     }
+    
     static class DSU {
         int[] parent;
         int[] size;
@@ -29,6 +30,7 @@ public class Main {
                 max[i] = i + 1;
             }
         }
+        
         public int getParent(int i) {
             while (i != parent[i]) {
                 parent[i] =  parent[parent[i]];
