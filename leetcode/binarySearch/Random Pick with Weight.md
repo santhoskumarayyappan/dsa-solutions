@@ -3,7 +3,8 @@
 * The idea is to calculate prefixSum of weight array 
 * Find random element 'w' in range [1, prefixWeightSum.last()]
 * Now find first index 'i' in prefixWeightSum s.t. 'w' <= prefixWeightSum[i]
-```Java
+
+```java
 class Solution {
     Random random;
     int[] prefixWeightSum;
@@ -37,4 +38,5 @@ class Solution {
         int weight = random.nextInt(prefixWeightSum[prefixWeightSum.length - 1]) + 1;
         return findFirstElementLE(weight);
     }
-}```
+}
+```
