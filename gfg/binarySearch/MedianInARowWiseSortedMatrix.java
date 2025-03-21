@@ -1,6 +1,11 @@
 //24-05-2022
 //https://practice.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1/
-
+//Given a row-wise sorted matrix where the number of rows and columns is always odd, find the median of the matrix.
+//Each row will be sorted, column wise we dont know
+// Assumption is odd length matrix so only one median possible
+// Median is basically an element 'median' in sorted array of length n, s.t a[i] <= median where i E [0, n / 2]   
+// last element of array s.t number of elements before median including it <= n / 2 + 1
+// first element of array s.t number of elements before median including it >= n / 2 + 1
 
 class Solution {
 
@@ -18,7 +23,7 @@ class Solution {
         return low;
     }
 
-    public boolean isNumberOfElementsLeXGeSize(int[][] a, int size, int x) {
+    public boolean isNumberOfElementsLeXGeSize(int[][] a, int x, int size) {
         int numberOfElementsLeX = 0;
         for (int i = 0; i < a.length; i++) {
             numberOfElementsLeX += getNumberOfElementsLeX(a[i], x);
@@ -48,7 +53,7 @@ class Solution {
         while (low < high) {
             int mid = low + (high - low) / 2;
             //System.out.println("h " + high + " l " + low);
-            if (isNumberOfElementsLeXGeSize(a, medianPos, mid)) {
+            if (isNumberOfElementsLeXGeSize(a, mid, medianPos)) {
                 high = mid;
             } else {
                 low = mid + 1;
